@@ -1,6 +1,8 @@
 import Head from "next/head";
 import localFont from "next/font/local";
-import { Footer } from "../components/footer.js";
+import { HeadLine } from "@/components/Headline";
+import { About } from "@/components/About";
+import { Footer } from "@/components/footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -22,6 +24,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <HeadLine name="ヘッドライン"></HeadLine>
+      <About name="アバウト"></About>
       テスト
       <Footer></Footer>
     </>
